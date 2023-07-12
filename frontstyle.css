@@ -1,0 +1,25 @@
+body {
+	background: antiquewhite;
+}
+div {
+	text-align: center;
+	left: 33%;
+	position: absolute;
+	font-size: 5em;
+}
+p {
+	margin: 0;
+}
+button {
+	font-size: 3rem;
+	background: floralwhite;
+	border: none;
+	font-style: italic;
+	font-family: auto;
+	cursor: pointer;
+	text-decoration: underline;
+}
+button:hover {
+	background: chocolate;
+	color: white;
+}

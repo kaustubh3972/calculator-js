@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	background: #f3f3f3;
+}
+#output1 {
+	width: 98%;
+	/* height: 1em; */
+	text-align: right;
+	font-size: xxx-large;
+	border: none;
+	margin-bottom: 5%;
+	color: black;
+}
+#output2 {
+	margin-top: 5%;
+	width: 98%;
+	height: 2em;
+	text-align: right;
+	border: none;
+	font-size: unset;
+}
+button {
+	width: 24%;
+}
+#line1 button {
+	width: 15.5%;
+	border: none;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	background-color: white;
+}
+.basic {
+	background: #f9f9f9;
+	margin-bottom: 1%;
+	padding: 4%;
+	font-size: large;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+#eq {
+	background-color: #005a9e;
+	color: white;
+}

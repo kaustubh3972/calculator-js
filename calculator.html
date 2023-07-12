@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <script src="script.js"></script>
+	<body>
+		<div id="calc">
+			<input id="output2" disabled></input>
+			<input id="output1"value="0" disabled></input>
+			<div id="btn">
+				<div id="line1">
+					<button id="MC"value="MC" disabled>MC</button>
+					<button id="MR"value="MR" disabled>MR</button>
+					<button id="M+" value="M+" onclick=f1() disabled>M+</button>
+					<button id="M-" value="M-" onclick=f1() disabled>M-</button>
+					<button id="MS" value="MS" onclick=f1() disabled>MS</button>
+					<button id="M^" value="M^" onclick=f1() disabled>M^</button>
+				</div>
+				<div id="line2">
+					<button id="percent" class="basic" value="%" onclick=percent()>%</button>
+					<button id="CE" class="basic" value="CE"onclick=f1() disabled>CE</button>
+					<button id="C" class="basic" value="C"onclick=clear1()>C</button>
+					<button id="backspace" class="basic" onclick=backspace()>&#9001x|</button>
+				</div>
+                <div id="line3" >
+				    <button id="1/x" class="basic" value="1/x" onclick=reciprocal()>1/x</button>
+				    <button id="x^2" class="basic" value="x^2" onclick=square()>x^2</button>
+				    <button id="root" class="basic" value="2&#8730x" onclick=root()>2&#8730x</button>
+				    <button id="div" class="basic" value="/" onclick=div()>&#xF7</button>
+                </div> 
+                <div id="line4">
+                    <button id="7" class="basic" value="7" onclick=num(this.value)>7</button>
+                    <button id="8" class="basic" value="8" onclick=num(this.value)>8</button>
+                    <button id="9" class="basic" value="9" onclick=num(this.value)>9</button>
+                    <button id="X" class="basic" value="*" onclick=mul()>X</button>
+                </div>
+                <div id="line5">
+                    <button id="4" class="basic" value="4" onclick=num(this.value)>4</button>
+                    <button id="5" class="basic" value="5" onclick=num(this.value)>5</button>
+                    <button id="6" class="basic" value="6" onclick=num(this.value)>6</button>
+                    <button id="-" class="basic" value="-" onclick=operation(this.value)>-</button>
+                </div> 
+                <div id="line6">
+                    <button id="1" class="basic" value="1" onclick=num(this.value)>1</button>
+                    <button id="2" class="basic" value="2" onclick=num(this.value)>2</button>
+                    <button id="3" class="basic" value="3" onclick=num(this.value)>3</button>
+                    <button id="+" class="basic" value="+" onclick=operation(this.value)>+</button>
+                </div>
+                <div id="line7">
+                    <button id="sign" class="basic"   value="-"onclick=sign()>+/-</button>
+                    <button id="0" class="basic"  value="0" onclick=num(this.value)>0</button>
+                    <button id="dec" class="basic"value="." onclick=dec()>.</button>
+                    <button id="eq" class="basic"  value="=" onclick=fEval()>=</button>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
